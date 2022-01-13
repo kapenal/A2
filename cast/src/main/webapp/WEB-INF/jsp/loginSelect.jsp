@@ -31,17 +31,17 @@
 				 			<option value="">로그인 방식을 선택해주세요..</option>
 				 			<option value="adminLogin">관리자</option>
 				 			<option value="travelerLogin">여행작가</option>
-				 			<option value="customerLogin">일반회원</option>
+				 			<option value="customerLogin"  selected>일반회원</option>
 				 			<option value="ceoLogin">사업자</option>
 			 			</select>
 			 			<hr>
 						</div>
 
 	                    <div class="form-group">
-	                      <input type="text" class="form-control" id="Id" name="Id"  placeholder="아이디를 입력해주세요">
+	                      <input type="text" class="form-control" id="Id" name="Id"  placeholder="아이디를 입력해주세요" value="customer">
 	                    </div>
 	                    <div class="form-group">
-	                      <input type="password" class="form-control" id="Pw" name="Pw" placeholder="비밀번호를 입력해주세요">
+	                      <input type="password" class="form-control" id="Pw" name="Pw" placeholder="비밀번호를 입력해주세요" value="1234">
 	                    </div>
 	                    <div class="form-group">
 	                      <button type="button" class="btn btn-primary btn-block" id="loginBtn">Login</button>
