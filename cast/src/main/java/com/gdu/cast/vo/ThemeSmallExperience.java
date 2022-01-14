@@ -1,5 +1,7 @@
 package com.gdu.cast.vo;
 
+import java.util.List;
+
 import lombok.Data;
 
 @Data
@@ -12,4 +14,5 @@ public class ThemeSmallExperience {
 	
 	private Experience experience;
 	private ThemeSmall themeSmall;
+	private ExperienceImage experienceImage;
 }

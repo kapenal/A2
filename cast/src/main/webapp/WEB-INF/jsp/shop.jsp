@@ -46,10 +46,10 @@
                     <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                 </div>
                 <div>
-                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/it_edu_goodee/?hl=ko" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/it_edu_goodee/?hl=ko" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/it_edu_goodee/?hl=ko" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/it_edu_goodee/?hl=ko" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
                 </div>
             </div>
         </div>
@@ -185,7 +185,7 @@
 	                    <div class="col-md-4">
 	                        <div class="card mb-4 product-wap rounded-0">
 	                            <div class="card rounded-0">
-	                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/shop_01.jpg">
+	                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/upload/${ShopExperienceList.experienceImage.imageName}.${ShopExperienceList.experienceImage.imageExt}" style=" width:600px; height:400px" onerror="this.src='${pageContext.request.contextPath}/upload/noimage.jpg'">
 	                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
 	                                    <ul class="list-unstyled">
 	                                        <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -254,7 +254,7 @@
 	                    <div class="col-md-4">
 	                        <div class="card mb-4 product-wap rounded-0">
 	                            <div class="card rounded-0">
-	                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/shop_01.jpg">
+	                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/upload/${ShopHotelList.hotelImage.imageName}.${ShopHotelList.hotelImage.imageExt}" style=" width:600px; height:400px" onerror="this.src='${pageContext.request.contextPath}/upload/noimage.jpg'">
 	                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
 	                                    <ul class="list-unstyled">
 	                                        <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -311,7 +311,7 @@
 	                    <div class="col-md-4">
 	                        <div class="card mb-4 product-wap rounded-0">
 	                            <div class="card rounded-0">
-	                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/shop_01.jpg">
+	                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/upload/${ShopExperienceList.experienceImage.imageName}.${ShopExperienceList.experienceImage.imageExt}" style=" width:600px; height:400px" onerror="this.src='${pageContext.request.contextPath}/upload/noimage.jpg'">
 	                                <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
 	                                    <ul class="list-unstyled">
 	                                        <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -354,7 +354,7 @@
                     <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/resources/assets/img/shop_01.jpg">
+                                <img class="card-img rounded-0 img-fluid" src="${pageContext.request.contextPath}/upload/${ShopHotelList.hotelImage.imageName}.${ShopHotelList.hotelImage.imageExt}" style=" width:600px; height:400px" onerror="this.src='${pageContext.request.contextPath}/upload/noimage.jpg'">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
                                         <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -476,16 +476,16 @@
                                     <div class="carousel-item active">
                                         <div class="row">
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_01.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_02.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_03.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_04.png" alt="Brand Logo"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -495,16 +495,16 @@
                                     <div class="carousel-item">
                                         <div class="row">
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_01.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_02.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_03.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_04.png" alt="Brand Logo"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -514,16 +514,16 @@
                                     <div class="carousel-item">
                                         <div class="row">
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_01.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_02.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_03.png" alt="Brand Logo"></a>
                                             </div>
                                             <div class="col-3 p-md-5">
-                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                                <a href="#"><img class="img-fluid brand-img" src="${pageContext.request.contextPath}/resources/assets/img/brand_04.png" alt="Brand Logo"></a>
                                             </div>
                                         </div>
                                     </div>

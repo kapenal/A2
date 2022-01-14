@@ -12,4 +12,5 @@ public class ThemeSmallHotel {
 	
 	private Hotel hotel;
 	private ThemeSmall themeSmall;
+	private HotelImage hotelImage;
 }

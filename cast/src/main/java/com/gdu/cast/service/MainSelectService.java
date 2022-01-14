@@ -264,6 +264,7 @@ public class MainSelectService {
 		Map<String, Object> returnMap = new HashMap<>();
 		startPage = ((currentPage - 1) / displayPage) * displayPage + 1;
 		int totalCount = mainSelectMapper.selectExperienceSelectTotalCount(map);
+		System.out.println(totalCount + "체험 리스트 개수");
 		lastPage = startPage + displayPage - 1;
 		int totalPage = totalCount / ROW_PER_PAGE;
 		if(totalCount % ROW_PER_PAGE != 0) {
@@ -303,6 +304,7 @@ public class MainSelectService {
 		Map<String, Object> returnMap = new HashMap<>();
 		startPage = ((currentPage - 1) / displayPage) * displayPage + 1;
 		int totalCount = mainSelectMapper.selectHotelSelectTotalCount(map);
+		System.out.println(totalCount + "호텔 리스트 개수");
 		lastPage = startPage + displayPage - 1;
 		int totalPage = totalCount / ROW_PER_PAGE;
 		if(totalCount % ROW_PER_PAGE != 0) {

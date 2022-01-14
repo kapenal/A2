@@ -38,10 +38,10 @@
 						</div>
 
 	                    <div class="form-group">
-	                      <input type="text" class="form-control" id="Id" name="Id"  placeholder="아이디를 입력해주세요" value="customer">
+	                      <input type="text" class="form-control" id="Id" name="Id"  placeholder="아이디를 입력해주세요(관리자 ID : admin)" value="customer">
 	                    </div>
 	                    <div class="form-group">
-	                      <input type="password" class="form-control" id="Pw" name="Pw" placeholder="비밀번호를 입력해주세요" value="1234">
+	                      <input type="password" class="form-control" id="Pw" name="Pw" placeholder="비밀번호를 입력해주세요(관리자 PW : 1234)" value="1234">
 	                    </div>
 	                    <div class="form-group">
 	                      <button type="button" class="btn btn-primary btn-block" id="loginBtn">Login</button>

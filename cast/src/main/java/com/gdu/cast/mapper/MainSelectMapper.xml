@@ -71,6 +71,10 @@
 			<result column="create_date" property="createDate" />
 			<result column="update_date" property="updateDate" />
 		</association>
+		<association property="experienceImage" javaType="com.gdu.cast.vo.ExperienceImage">
+			<result column="image_name" property="imageName" />
+			<result column="image_ext" property="imageExt" />
+		</association>
 	</resultMap>
 	
 	<resultMap type="com.gdu.cast.vo.ThemeSmallHotel" id="resultThemeSmallHotel">
@@ -93,6 +97,10 @@
 			<result column="theme_small_name" property="themeSmallName" />
 			<result column="create_date" property="createDate" />
 			<result column="update_date" property="updateDate" />
+		</association>
+		<association property="hotelImage" javaType="com.gdu.cast.vo.HotelImage">
+			<result column="image_name" property="imageName" />
+			<result column="image_ext" property="imageExt" />
 		</association>
 	</resultMap>
 	
@@ -297,13 +305,15 @@
 	
 	<select id="selectThemeShopExperienceList" parameterType="Map" resultMap="resultThemeSmallExperience">
 		SELECT themeSmall.theme_small_name, experience.experience_name, experience.experience_content,
-				 experience.experience_id, experience.experience_price
+				 experience.experience_id, experience.experience_price, experienceImage.image_name, experienceImage.image_ext
 		FROM theme_small_experience themeSmallExperience INNER JOIN experience
 		ON themeSmallExperience.experience_id = experience.experience_id
 		INNER JOIN theme_small themeSmall
 		ON themeSmallExperience.theme_small_id = themeSmall.theme_small_id
 		LEFT JOIN keyword k
 		ON experience.experience_id = k.hotel_experience_id
+		LEFT JOIN experience_image experienceImage
+		ON experience.experience_id = experienceImage.experience_id
 		<where>
 			<choose>
 				<when test='(searchKeyword != null or searchKeyword == "")'>
@@ -319,13 +329,16 @@
 	</select>
 	
 	<select id="selectThemeShopHotelList" parameterType="Map" resultMap="resultThemeSmallHotel">
-		SELECT themeSmall.theme_small_name, hotel.hotel_name, hotel.hotel_content, hotel.hotel_id
-		FROM theme_small_hotel themeSmallHotel INNER JOIN hotel
+		SELECT themeSmall.theme_small_name, hotel.hotel_name, hotel.hotel_content, hotel.hotel_id, hotelImage.image_name, hotelImage.image_ext
+		FROM theme_small_hotel themeSmallHotel
+		INNER JOIN hotel
 		ON themeSmallHotel.hotel_id = hotel.hotel_id
 		INNER JOIN theme_small themeSmall
 		ON themeSmallHotel.theme_small_id = themeSmall.theme_small_id
 		JOIN keyword k
 		ON hotel.hotel_id = k.hotel_experience_id
+		LEFT JOIN hotel_image hotelImage
+		ON hotel.hotel_id = hotelImage.hotel_id
 		<where>
 			<choose>
 				<when test='(searchKeyword != null or searchKeyword == "")'>
